@@ -1,0 +1,13 @@
+<h1 style="text-align: center;">User Placeholder</h1>
+<br>
+<div>
+    <div class="row">
+        <div class="col sm-4" *ngFor="let user of users | async">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <a routerLink="users/{{user.id}}">{{user.username}}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
